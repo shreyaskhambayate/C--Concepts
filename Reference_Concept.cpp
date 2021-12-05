@@ -16,7 +16,7 @@ int main()
 	int &ref1 = i;		// 'ref1' is the another name for 'i'
 
 	// 	'ref1' and 'i' both are pointing to same address location of 4 bytes...
-//sizeof(reference_var)=sizeof(original_variable)
+
 	cout<<"\nValue of i is :"<<i<<"\n Value of ref1 is :"<<ref1<<endl;
 
 	cout<<"\nincrementing value through reference variable\n";
@@ -54,7 +54,7 @@ int main()
 	int &ref6 = x;
 	int &ref7 = x;
 	//	'x' can be identified by 'ref5', 'ref6' and 'ref7'...
-//UPDATE
+
 // creating pointer to reference
 
 	int y = 20;
@@ -66,7 +66,7 @@ int main()
 
 	int z = 20;
 	int *q = &z;
-	int *(&ref9) = q;	// 'ref9' is a reference WHICH IS CURRENTLY REFERING TO THE INTEGER POINTER Q...
+	int *(&ref9) = q;	// 'ref9' is a reference variable for 'z'...
 
 cout<<"Value from pointer is "<<*q<<endl;
 cout<<"Value from reference pointer is "<<*ref9<<endl;
@@ -79,9 +79,17 @@ cout<<"Value from reference pointer is "<<*ref9<<endl;
 	int arr[] = {10,20,30,40};
 
 	int (&refarr)[4] = arr;
-	//int &refarr[4] = arr;
 
 // int (&refarr)[ ] = arr; is not allowed , we have to provide the size for the array...
 
 	return 0;
 }
+
+
+
+
+
+
+
+
+
