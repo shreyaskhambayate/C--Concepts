@@ -1,23 +1,23 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-// This program demostate important concepts abouot the Array
+// This program demonstrates important concepts abouot Array
 
 int main()
 {
 	// We can allocate memory for array statically or dynamically
 
 //////////////////////////////////////////////////////////////////////////////
-	// Static memry allocation for array of 10 elements
+	// Static memory allocation for array of 10 elements
 	int arr1[10];
 
 //////////////////////////////////////////////////////////////////////////////
 
-	// Dynamic memry allocation for array of 10 elements
+	// Dynamic memory allocation for array of 10 elements
 	int *parr1 = (int *)malloc(sizeof(int) * 10);
 
 //////////////////////////////////////////////////////////////////////////////
-	// Size of the arraymust be known at compile time
+	// Size of the array must be known at compile time
 	// We can not use variable as a size.
 	// We can provide compile constant while creating array
 
@@ -53,7 +53,7 @@ int main()
 
 //////////////////////////////////////////////////////////////////////////////
 
-	// We can initialise the array in member initialisation manner  or member by meber initialisation
+	// We can initialise the array in member initialisation manner  or member by member initialisation
 	int arr8[5] = {10,20,30,40,50};
 	int arr9[5];
 	arr9[0] = 10;	arr9[1] = 20;	arr9[2] = 30;	arr9[3] = 40;	arr9[4] = 50;
@@ -84,7 +84,7 @@ int main()
 
 //////////////////////////////////////////////////////////////////////////////
 
-	// We can use equality operators on array but it gives a fixed result as it compaires base address of the array.
+	// We can use equality operators on array but it gives a fixed result as it compares base address of the array.
 	// And base address of any two array is always diffrent
 	int arr14[2] = {10,20};
 	int arr15[2] = {10,20};
@@ -97,7 +97,7 @@ int main()
 		printf("\nBoth the arrays are not equal\n");
 	}
 
-	// To compaire the array we have to compaire it mtmber by member by using loop
+	// To compare the array we have to compare it member by member by using loop
 
 //////////////////////////////////////////////////////////////////////////////
 
